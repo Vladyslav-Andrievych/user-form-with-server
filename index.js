@@ -3,7 +3,7 @@ const formElem = document.querySelector('.login-form');
 const submitBtn = document.querySelector('.submit-button');
 
 [...document.querySelectorAll('.form-input')].forEach((inputElem) => {
-  inputElem.addEventListener('change', () => {
+  inputElem.addEventListener('input', () => {
     const isAllFilled = formElem.reportValidity();
     if (isAllFilled) {
       submitBtn.disabled = false;
